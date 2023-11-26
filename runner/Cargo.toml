@@ -1,0 +1,9 @@
+[package]
+name = "midnight2-runner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = { workspace = true }
+winit = { workspace = true }
+midnight2-core = { path = "../core/", features = [ "dx12" ] }

@@ -1,0 +1,18 @@
+[package]
+name = "midnight2-core"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+log = { workspace = true }
+winit = { workspace = true }
+cfg-if = { workspace = true }
+wgpu-hal = { git = "https://github.com/gfx-rs/wgpu.git", features = [ "dx12", "dxc_shader_compiler" ] }
+wgpu-types = { git = "https://github.com/gfx-rs/wgpu.git"}
+raw-window-handle = {version = "0.6"}
+pretty_env_logger = { version = "0.5.0" }
+
+[features]
+# Defines a feature named `dx12` that does not enable any other features.
+dx12 = []
